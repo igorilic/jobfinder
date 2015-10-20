@@ -9,11 +9,14 @@
   "author": "Igor Ilic",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^2.10.2",
     "express": "^4.13.3",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mongoose": "^4.1.12"
   },
   "devDependencies": {
     "bower": "^1.6.3",
+    "chai": "^3.3.0",
     "tsd": "^0.6.5"
   }
 }

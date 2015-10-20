@@ -2,14 +2,9 @@
     angular
         .module('app')
         .controller('TestCtrl', TestCtrl);
-    function TestCtrl() {
+    TestCtrl.$inject = ['$resource'];
+    function TestCtrl($resource) {
         var vm = this;
-        vm.jobs = [{
-            title: 'Sales Person',
-            description: 'you will fight dragons'
-        }, {
-            title: 'Accountant',
-            description: 'you will use the keybord'
-        }];
+        vm.jobs = $resource('/api/jobs').query();
     }
 })();
