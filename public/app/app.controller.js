@@ -1,4 +1,5 @@
 (function() {
+    /* global angular */
     angular
         .module('app')
         .controller('TestCtrl', TestCtrl);

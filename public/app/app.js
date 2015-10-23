@@ -1,5 +1,7 @@
 (function () {
-    angular.module('app', [
-        'ngResource'
-    ]);
+    /* global angular */
+    angular
+        .module('app', [
+            'ngResource'
+        ]);
 })();
