@@ -1,5 +1,4 @@
 var express = require('express');
-
 var jobModel = require("./models/job");
 var jobsData = require("./jobs-data");
 
@@ -19,6 +18,8 @@ app.get('/api/jobs', function(req, res) {
 app.get('*', function (req, res) {
     res.render('index');
 });
+
+
 
 // mongoose.connect('mongodb://localhost/jobFinder');
 jobsData
